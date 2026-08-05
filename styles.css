@@ -39,9 +39,20 @@ a {
   font-family: "Old Standard TT", serif;
   text-decoration: none;
   color: black;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-/*The End of line 14 til line 42*/
+li a:hover {
+    background-color: #f5e0e0;
+    padding: 10px;
+}
+
+li a:active {
+    background-color: #E1D3D3;
+}
+
+/*The End of line 14 til line 53*/
 
 
 /*Designing Section One's Avatar Images & Short Description*/
@@ -61,6 +72,26 @@ a {
     overflow: hidden;
 }
 .text {
-    width: 350px;
-    font-size: 20px;
+    width: 450px;
+    font-size: 1.5em;
 }
+
+.sectionOne button {
+    font-weight: bold;
+    padding: 15px 50px;
+    border-radius: 10px;
+}
+
+.sectionOne button:active {
+    background-color: transparent;
+    color: white;
+}
+
+.sectionOne a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*The End Of Section One*/
