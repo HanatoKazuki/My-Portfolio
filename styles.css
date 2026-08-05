@@ -41,12 +41,26 @@ a {
   color: black;
 }
 
-/*The End of line 14 til line 45*/
+/*The End of line 14 til line 42*/
 
 
 /*Designing Section One's Avatar Images & Short Description*/
 .sectionOne {
-    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    gap: 100px;
     background-color: #E1D3D3;
-    z-index: 1;
+}
+.box {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.text {
+    width: 350px;
+    font-size: 20px;
 }
