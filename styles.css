@@ -10,7 +10,8 @@ html {
 /*The End Of line 2 till line 8*/
 
 
-/*Designing The Fixed Header*/
+/*Design The Fixed Header*/
+
 .fixedHeader {
     position: fixed;
     z-index: 10;
@@ -31,7 +32,7 @@ ul {
     margin-right: 20px;
 }
 
-li {
+nav li {
     list-style: none;
 }
 
@@ -74,9 +75,12 @@ li a:active {
 .text {
     width: 450px;
     font-size: 1.5em;
+    background-color: hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
 }
 
 .sectionOne button {
+    width: 190px;
     cursor: pointer;
     font-weight: bold;
     padding: 15px 50px;
@@ -109,6 +113,9 @@ li a:active {
     font-size: 2rem;
 }
 
+.sectionTwo p {
+    font-size: 1.2rem;
+}
 
 .aboutContainer {
     display: flex;
@@ -120,10 +127,130 @@ li a:active {
 }
 .aboutContentContainer {
     width: 400px;
+    margin-top: 300px;
 }
 
 .aboutContent {
     width: 400px;
 }
 
+.btn {
+    width: 150px;
+}
+
+.aboutImage img {
+    width: 300px;
+    height: 300px;
+    margin-top: 300px;
+    border-radius: 10px;
+}
+
 /*The End Of Section Two*/
+
+
+/*Section Three*/
+
+.sectionThree {
+    height: 100vh;
+    background: linear-gradient(#e3d5ca, #FEF7C0);
+}
+
+.cardContainer {
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContent {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.card {
+    margin-top: 200px;
+    width: 350px;
+    height: 550px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 40%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*The End Of Section Three*/
+
+/*Section Four*/
+
+.sectionFour {
+    height: 80vh;
+    background: linear-gradient(#FEF7C0, lightblue);
+}
+
+.socialSubtitle {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.socialContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.socialContainer .btn {
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid lightgrey;
+}
+
+/*The End Of Section Four*/
+
+/* Responsive Layout */
+
+@media screen and (max-width: 768px) {
+.aboutImage img {
+    display: none;
+}
+
+.box {
+    display: none;
+}
+
+
+}
+@media screen and (max-width: 980px) {
+.aboutImage img {
+    display: none;
+}
+.cardContainer {
+    flex-direction: column;
+}
+.aboutContainer {
+    display: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionThree {
+    height: 350%;
+}
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        display: none;
+    }
+    .aboutContentContainer {
+        margin-left: 200px;
+    }
+}
+
+
+/*The End Of Responsive Layout*/
