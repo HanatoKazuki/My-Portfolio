@@ -187,8 +187,30 @@ li a:active {
 /*Section Four*/
 
 .sectionFour {
-    height: 80vh;
-    background: linear-gradient(#FEF7C0, lightblue);
+    height: 100vh;
+        background: linear-gradient(#FEF7C0, lightblue);
+}
+
+.sectionFour button {
+        width: 190px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 15px 50px;
+    border-radius: 10px;
+}
+
+/*End Of Section Four*/
+
+
+/*Section Five*/
+
+.sectionFive .btn {
+    width: 100%;
+}
+
+.sectionFive {
+    height: 50vh;
+    background: linear-gradient(lightblue, #E1D3D3);
 }
 
 .socialSubtitle {
@@ -197,20 +219,20 @@ li a:active {
 }
 
 .socialContainer {
+    margin-left: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
 }
-
-.socialContainer .btn {
-    width: 200px;
-    height: 150px;
-    background-color: white;
-    border: 1px solid lightgrey;
+.socialContainer img {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/*The End Of Section Four*/
+/*The End Of Section Five*/
 
 /* Responsive Layout */
 
@@ -223,12 +245,29 @@ li a:active {
     display: none;
 }
 
+.socialContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutContentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+.sectionFive a {
+    padding: 0;
+}
+}
+
+@media screen and (max-width: 979px) {
+    .aboutImage img {
+        display: none;
+    }
 
 }
+
 @media screen and (max-width: 980px) {
-.aboutImage img {
-    display: none;
-}
 .cardContainer {
     flex-direction: column;
 }
@@ -239,7 +278,11 @@ li a:active {
 }
 
 .sectionThree {
-    height: 350%;
+    height: 100%;
+}
+
+.sectionFour {
+    height: 100%;
 }
 }
 
